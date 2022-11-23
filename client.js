@@ -9,10 +9,6 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
-  const moveUp = function () {
-    conn.write("Move: up")
-  }
-
   conn.on('connect', () => {
     console.log('A connection has been made!');
     conn.write("Name: KNI");

@@ -1,5 +1,10 @@
-
 let connection;
+
+const saying = {
+  "1": "Say: nom nom nom",
+  "2": "Say: i'm gonna get u",
+  "3": "Say: sssssss"
+};
 
 const handleUserInput = function (key) {
   if (key === '\u0003') {
@@ -20,6 +25,9 @@ const handleUserInput = function (key) {
   if (key === 'd') {
     connection.write("Move: right")
     //console.log("Moved right")
+  };
+  if (saying[key]) {
+    connection.write(saying[key])
   };
 };
 
