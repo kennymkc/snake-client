@@ -1,10 +1,6 @@
-let connection;
+const {saying} = require("./constants")
 
-const saying = {
-  "1": "Say: nom nom nom",
-  "2": "Say: i'm gonna get u",
-  "3": "Say: sssssss"
-};
+let connection;
 
 const handleUserInput = function (key) {
   if (key === '\u0003') {
