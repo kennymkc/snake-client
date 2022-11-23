@@ -16,7 +16,6 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('A connection has been made!');
     conn.write("Name: KNI");
-    conn.write("Move: up");
   });
 
   conn.on('data', (data) => {
